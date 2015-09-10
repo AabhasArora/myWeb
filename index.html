@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="./styles/bootstrap.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="./styles/keyframes.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
 </head>
 <body>
+<!-- Container with an id -->
+<div id="main" class="m-scene">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -20,14 +23,14 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li view="template"><a href="#">Template</a></li>
-                <li view="scheduling"><a href="#scheduling">Scheduling</a></li>
-                <li view="userlist"><a href="#userlist">Userlist</a></li>
+                <li view="template"><a href="index.html">Template</a></li>
+                <li view="scheduling"><a href="scheduling.html">Scheduling</a></li>
+                <li view="userlist"><a href="userlist.html">Userlist</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div id="template" class="tabs container">
+<div id="template" class="tabs container scene_element scene_element--fadein">
     <form class="form-horizontal">
         <div class="form-group">
             <label for="inputEmail" class="control-label col-xs-2">Template Name</label>
@@ -138,13 +141,10 @@
         </div>
     </form>
 </div>
-<div id="scheduling" class="tabs container">
-    About
-</div>
-<div id="userlist" class="tabs container">
-    Contact
 </div>
 <script src="./script/jquery.js"></script>
 <script src="./script/bootstrap.js"></script>
+<script src="./script/jquery.smoothState.js"></script>
+<script src="./script/app.js"></script>
 </body>
 </html>
