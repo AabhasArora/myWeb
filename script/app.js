@@ -30,3 +30,10 @@
         },
         smoothState = $main.smoothState(options).data('smoothState');
 })(jQuery);
+
+$(document).ready(function () {
+    $(document).on("click", "#template-tabs a", function(e){
+        e.preventDefault();
+        $(this).tab('show');
+    });
+});
